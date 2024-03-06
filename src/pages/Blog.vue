@@ -38,10 +38,10 @@
         </div>
 
         <div class="grow mt-4 sm:mt-0 sm:ms-6 px-4 sm:px-0">
-          <h3 class="text-xl font-semibold text-gray-800 group-hover:text-gray-600 dark:text-gray-300 dark:group-hover:text-white">
+          <h3 class="text-xl font-semibold text-black-800 group-hover:text-gray-600 white:text-black white:group-hover:text-white">
             {{blog.title}}
           </h3>
-          <p class="mt-3 text-gray-600 dark:text-gray-400 ">
+          <p class="mt-3 text-gray-600 white:text-black ">
            {{blog.description}}
           </p>
          
@@ -75,10 +75,12 @@ export default {
 
     methods: {
         async getBlog() {
+            this.loading = true;
             try {
                 const response = await axios.get('http://localhost:8000/blog/get_all_for_website')
                 console.log(response);
                 this.blogs = response.data.message
+                this.loading = false;
             }
             catch {
                 console.log('Error');

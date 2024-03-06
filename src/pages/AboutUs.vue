@@ -31,8 +31,8 @@
   <!-- Grid -->
   <div class="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center">
     <div>
-      <h1 class="block text-3xl font-bold text-gray-800 sm:text-4xl lg:text-6xl lg:leading-tight dark:text-white">Nuestro  <span class="text-orange-600">Servicio</span>, un  <span class="text-orange-600">Compromiso</span></h1>
-      <p class="mt-3 text-lg text-gray-800 dark:text-gray-400">{{ about_us_message }}</p>
+      <h1 class="block text-3xl font-bold text-gray-800 sm:text-4xl lg:text-6xl lg:leading-tight white:text-black">Nuestro  <span class="text-orange-600">Servicio</span>, un  <span class="text-orange-600">Compromiso</span></h1>
+      <p class="mt-3 text-lg text-gray-800 white:text-black">{{ about_us_message }}</p>
 
     
     </div>
@@ -69,10 +69,12 @@ export default {
     },
   methods: {
     async getAboutUs() {
+      this.loading = true;
         try {
             const response = await axios.get('http://localhost:8000/about_us/get_about_us')
             console.log(response);
             this.about_us_message = response.data.text
+            this.loading = false;
         }
         catch {
             console.log('Error');

@@ -18,10 +18,12 @@
         <router-link class="font-medium text-white/[.8] hover:text-white sm:py-6" to="/services" >Servicios</router-link>
         <router-link class="font-medium text-white/[.8] hover:text-white sm:py-6" to="/blog" >Blog</router-link>
         <router-link class="font-medium text-white/[.8] hover:text-white sm:py-6" to="/contact" >Contacto</router-link>
+        <router-link class="font-medium text-white/[.8] hover:text-white sm:py-6" to="/frecuent_questions" >Preguntas Frecuentes</router-link>
+        <router-link class="font-medium text-white/[.8] hover:text-white sm:py-6" to="/possible_employees" >Trabaja con nosotros</router-link>
 
       
 
-        <a class="flex items-center gap-x-2 font-medium text-white/[.8] hover:text-white sm:border-s sm:border-white/[.3] sm:my-6 sm:ps-6" href="#">
+        <a class="flex items-center gap-x-2 font-medium text-white/[.8] hover:text-white sm:border-s sm:border-white/[.3] sm:my-6 sm:ps-6" href="https://erpjis.com" target="_blank" >
           <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
           Intranet
         </a>

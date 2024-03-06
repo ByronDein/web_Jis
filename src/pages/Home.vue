@@ -74,7 +74,7 @@
 <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
   <!-- Title -->
   <div class="w-2/3 sm:w-1/2 lg:w-3/3 mx-auto text-center mb-10">
-    <h2 class="block text-2xl font-bold text-gray-800 sm:text-4xl lg:text-4xl lg:leading-tight dark:text-white ">Nuestro <span class="text-orange-600">Servicio</span>, un  <span class="text-orange-600">Compromiso</span></h2>
+    <h2 class="block text-2xl font-bold text-gray-800 sm:text-4xl lg:text-4xl lg:leading-tight white:text-black ">Nuestro <span class="text-orange-600">Servicio</span>, un  <span class="text-orange-600">Compromiso</span></h2>
     <p class="mt-3 text-xl sm:text-2xl text-gray-800 dark:text-gray-400  font-bold">Estos Clientes Confian en Nosotros</p>
 
   </div>
@@ -106,6 +106,8 @@
 
 <div class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-6 gap-x-6 sm:gap-x-6  sm:mt-10 sm:mb-10 justify-items-center ">
     
+    <img src="../assets/clients/WhatsApp Image 2024-03-06 at 09.38.58 (1).jpeg"  class=" w-72 sm:w-40  mt-5" alt="">
+    <img src="../assets/clients/WhatsApp Image 2024-03-06 at 09.38.58.jpeg"  class=" w-72 sm:w-40  mt-5" alt="">
     <img src="../assets/clients/partner_14_06_2019_05_30_01.png"  class=" w-72 sm:w-40  mt-5" alt="">
 </div>
 
