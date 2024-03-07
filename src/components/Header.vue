@@ -18,7 +18,6 @@
         <router-link class="font-medium text-white/[.8] hover:text-white sm:py-6" to="/services" >Servicios</router-link>
         <router-link class="font-medium text-white/[.8] hover:text-white sm:py-6" to="/blog" >Blog</router-link>
         <router-link class="font-medium text-white/[.8] hover:text-white sm:py-6" to="/contact" >Contacto</router-link>
-        <router-link class="font-medium text-white/[.8] hover:text-white sm:py-6" to="/frecuent_questions" >Preguntas Frecuentes</router-link>
         <router-link class="font-medium text-white/[.8] hover:text-white sm:py-6" to="/possible_employees" >Trabaja con nosotros</router-link>
 
       

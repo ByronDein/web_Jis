@@ -13,8 +13,7 @@
 
         <div class="mt-3 grid space-y-3">
             <p><router-link class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" to="/">Inicio</router-link></p>
-            <p><router-link class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" to="/frecuent_questions">Preguntas Frecuentes</router-link></p>
-            <p><router-link class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" to="https://jisparking.com/login">Intranet</router-link></p>
+            <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" target="_blank" href="https://jisparking.com/login">Intranet</a></p>
         </div>
         </div>
         <!-- End Col -->
@@ -59,7 +58,7 @@
 </footer>
 </template>
 
-<style>
+<style scoped>
 i {
   font-size: 3rem/* 48px */;
   line-height: 1;

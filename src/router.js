@@ -3,7 +3,6 @@ import Home from './pages/Home.vue'
 import AboutUs from './pages/AboutUs.vue'
 import Blog from './pages/Blog.vue'
 import Contact from './pages/Contact.vue'
-import FrecuentQuestions from './pages/FrecuentQuestions.vue'
 import PossibleEmployees from './pages/PossibleEmployees.vue'
 import Services from './pages/Services.vue'
 
@@ -28,10 +27,6 @@ const routes = [
     {
         path:'/contact',
         component: Contact
-    },
-    {
-        path:'/frecuent_questions',
-        component: FrecuentQuestions
     },
     {
         path:'/possible_employees',

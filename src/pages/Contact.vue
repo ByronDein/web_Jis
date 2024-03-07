@@ -66,6 +66,11 @@
               <label for="hs-phone-number-1" class="sr-only">Telefono</label>
               <input required type="text" name="hs-phone-number-1" id="hs-phone-number-1" class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600" placeholder="Telefono">
             </div>
+            <div class="grid grid-cols-1 sm:grid-cols-1 gap-4">
+              <label for="hs-email-contacts-1" class="sr-only">Asunto</label>
+              <input required type="email" name="hs-email-contacts-1" id="hs-email-contacts-1" autocomplete="email" class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600" placeholder="Asunto">
+            
+           </div>
 
             <div>
               <label for="hs-about-contacts-1" class="sr-only">Mensaje</label>

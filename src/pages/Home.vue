@@ -106,8 +106,8 @@
 
 <div class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-6 gap-x-6 sm:gap-x-6  sm:mt-10 sm:mb-10 justify-items-center ">
     
-    <img src="../assets/clients/WhatsApp Image 2024-03-06 at 09.38.58 (1).jpeg"  class=" w-72 sm:w-40  mt-5" alt="">
-    <img src="../assets/clients/WhatsApp Image 2024-03-06 at 09.38.58.jpeg"  class=" w-72 sm:w-40  mt-5" alt="">
+    <img src="../assets/clients/logo_jumbo.png"  class=" w-72 sm:w-40  mt-5" alt="">
+    <img src="../assets/clients/logo_ubo.png"  class=" w-72 sm:w-40  mt-5" alt="">
     <img src="../assets/clients/partner_14_06_2019_05_30_01.png"  class=" w-72 sm:w-40  mt-5" alt="">
 </div>
 

@@ -45,7 +45,6 @@
     "vue": "^3.3.4",
     "vue-awesome-paginate": "^1.1.46",
     "vue-awesome-sidebar": "^1.2.3",
-    "vue-carousel": "^0.18.0",
     "vue-html2pdf": "^1.8.0",
     "vue-inputmask": "^0.2.1",
     "vue-router": "^4.2.4",
