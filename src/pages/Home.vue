@@ -130,7 +130,7 @@ export default {
 <style>
 .carousel__item {
   min-height: 200px;
-  width: 3000px !important;
+  width: 100% !important;
   color: var(--vc-clr-white);
   font-size: 20px;
   border-radius: 8px;
