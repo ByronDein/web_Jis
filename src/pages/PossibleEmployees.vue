@@ -113,7 +113,7 @@ export default {
         formData.append('mother_lastname', this.mother_lastname)
         formData.append('cellphone', this.cellphone_input)
         formData.append('support', this.support)
-        const response = await axios.post('http://localhost:8000/possible_employees/store', formData)
+        const response = await axios.post('https://apijis.com/possible_employees/store', formData)
         console.log(response)
         this.loading = false;
         this.validate_possible_employee = 1

@@ -154,7 +154,7 @@ export default {
     async getContact() {
       this.loading = true;
       try {
-        const response = await axios.get('http://localhost:8000/contact/get_contact')
+        const response = await axios.get('https://apijis.com/contact/get_contact/')
         this.contact_data = response.data.message
         console.log(this.contact_data)
         this.loading = false;

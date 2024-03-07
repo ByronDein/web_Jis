@@ -77,7 +77,7 @@ export default {
         async getBlog() {
             this.loading = true;
             try {
-                const response = await axios.get('http://localhost:8000/blog/get_all_for_website')
+                const response = await axios.get('https://apijis.com/blog/get_all_for_website/')
                 console.log(response);
                 this.blogs = response.data.message
                 this.loading = false;

@@ -1,7 +1,7 @@
 <template>
   <div class="">
     <!-- Show loading message if data is not ready -->
-    <div v-if="1==2" class="flex justify-center items-center h-screen">
+    <div v-if="loading" class="flex justify-center items-center h-screen">
       <div role="status">
         <!-- SVG spinner -->
         <svg
@@ -29,8 +29,8 @@
         <!-- Show the content when data is ready -->
   <div v-else>
     <Carousel v-bind="settings" :breakpoints="breakpoints">
-        <Slide v-for="slide in 10" :key="slide">
-          <div class="carousel__item"><img src="../assets/sliders/slider1.png" alt="" ></div>
+        <Slide v-for="slide in sliders" :key="slide">
+          <div class="carousel__item"><img :src="slide" alt="" ></div>
         </Slide>
 
         <template #addons>
@@ -44,7 +44,7 @@
           <!-- Title -->
           <div class="w-2/3 sm:w-1/2 lg:w-3/3 mx-auto text-center mb-10">
             <h2 class="block text-2xl font-bold text-gray-800 sm:text-4xl lg:text-4xl lg:leading-tight white:text-black ">Nuestro <span class="text-orange-600">Servicio</span>, un  <span class="text-orange-600">Compromiso</span></h2>
-            <p class="mt-3 text-xl sm:text-2xl text-gray-800 dark:text-gray-400  font-bold">Estos Clientes Confian en Nosotros</p>
+            <p class="mt-3 text-xl sm:text-2xl text-gray-800 dark:text-gray-400  font-bold">Ellos Ya Confian en Nosotros</p>
 
           </div>
           <!-- End Title -->
@@ -88,7 +88,7 @@
 <script>
 import 'vue3-carousel/dist/carousel.css'
 import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
-
+import axios from 'axios'
 
 export default {
   components: {
@@ -99,12 +99,30 @@ export default {
   },
     data() {
         return {
+            sliders: [],
             loading: false,
             loading_1: true,
             loading_2: true,
             loading_3: true,
             loading_4: true,
         }
+    },
+    methods: {
+      async getSliders() {
+        this.loading = true;
+        try {
+          const response = await axios.get('https://apijis.com/slider/get_slider_for_website/')
+          console.log(response);
+          this.sliders = response.data
+          console.log(this.sliders)
+          this.loading = false
+        } catch (error) {
+          console.error(error)
+        }
+      }
+    },
+    mounted() {
+      this.getSliders()
     },
     
 }
