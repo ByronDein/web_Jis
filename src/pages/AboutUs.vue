@@ -71,7 +71,7 @@ export default {
     async getAboutUs() {
       this.loading = true;
         try {
-            const response = await axios.get('http://localhost:8000/about_us/get_about_us')
+            const response = await axios.get('https://apijis.com//about_us/get_about_us/')
             console.log(response);
             this.about_us_message = response.data.text
             this.loading = false;
