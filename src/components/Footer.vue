@@ -13,7 +13,8 @@
 
         <div class="mt-3 grid space-y-3">
             <p><router-link class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" to="/">Inicio</router-link></p>
-            <p><router-link class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" to="#">Intranet</router-link></p>
+            <p><router-link class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" to="/frecuent_questions">Preguntas Frecuentes</router-link></p>
+            <p><router-link class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" to="https://jisparking.com/login">Intranet</router-link></p>
         </div>
         </div>
         <!-- End Col -->
@@ -23,31 +24,24 @@
 
             <div class="mt-3 grid space-y-3">
                 <p><router-link class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" to="/about_us">Nosotros</router-link></p>
-                <p><router-link class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" to="/about_us">Servicios</router-link></p>
+                <p><router-link class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" to="/services">Servicios</router-link></p>
                 <p><router-link class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" to="/blog">Blog</router-link></p>
+                <p><router-link class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" to="/possible_employees">Trabaja con nosotros</router-link></p>
             </div>
         </div>
         <!-- End Col -->
-
-      <div class="col-span-2">
-        <h4 class="font-semibold text-gray-100">Stay up to date</h4>
-
-        <form>
-          <div class="mt-4 flex flex-col items-center gap-2 sm:flex-row sm:gap-3 bg-white rounded-lg p-2 dark:bg-gray-800">
-            <div class="w-full">
-              <label for="hero-input" class="sr-only">Search</label>
-              <input type="text" id="hero-input" name="hero-input" class="py-3 px-4 block w-full border-transparent rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-transparent dark:text-gray-400 dark:focus:ring-gray-600" placeholder="Enter your email">
-            </div>
-            <a class="w-full sm:w-auto whitespace-nowrap p-3 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#">
-              Subscribe
-            </a>
-          </div>
-          <p class="mt-3 text-sm text-gray-400">
-            New UI kits or big discounts. Never spam.
-          </p>
-        </form>
-      </div>
-      <!-- End Col -->
+      <div class="col-span-1 hidden md:block ">
+        <a  href="#"><i class="fa-brands fa-facebook"></i></a>
+        &nbsp;
+        &nbsp;
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        &nbsp;
+        &nbsp;
+        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+        
+       
+        </div>
+  
     </div>
     <!-- End Grid -->
 
@@ -64,3 +58,12 @@
   </div>
 </footer>
 </template>
+
+<style>
+i {
+  font-size: 3rem/* 48px */;
+  line-height: 1;
+  color: white;
+  cursor: pointer;
+}
+</style>
